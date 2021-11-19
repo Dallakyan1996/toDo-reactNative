@@ -3,6 +3,7 @@ import { StatusBar } from 'expo-status-bar';
 import { Text, View, Button, CheckBox, TextInput } from 'react-native';
 import { useState } from 'react';
 import { toDoStyles } from './ToDoStyle';
+import LogOutComponent from '../LoginComponent/LogOutComponent';
 
 
 const ToDo = () => {
@@ -39,6 +40,8 @@ const ToDo = () => {
                 })
             }
         }} title="Add" />
+
+        <LogOutComponent />
         <StatusBar style="auto" />
     </View >
 }
